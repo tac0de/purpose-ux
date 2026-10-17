@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Model scope and limitations
+    url: https://github.com/tac0de/purpose-ux/blob/main/docs/MODEL_CARD.md
+    about: Read supported behavior and evaluation limits before interpreting model output.
+  - name: Support the roadmap
+    url: https://github.com/sponsors/tac0de
+    about: Voluntary support for open-source data and evaluation work.

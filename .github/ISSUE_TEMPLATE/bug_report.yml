@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible installation, training, inference, or evaluation failure.
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Expected and observed behavior
+      description: Describe what you expected and what happened. Include the complete error if available, with secrets and private paths removed.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include the exact command and public input needed to reproduce the problem. Do not upload private screenshots or model weights.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include PurposeUX revision/version, macOS version, Apple chip and memory, Python and MLX-VLM versions, model identifier, and whether an adapter was used.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks already performed
+      description: Include relevant doctor output or a minimal comparison, with private information removed.

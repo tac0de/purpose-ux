@@ -1,0 +1,24 @@
+name: Feature or research proposal
+description: Propose a focused improvement with a clear way to assess it.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the concrete limitation or research question and who encounters it.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe a focused implementation or reusable existing approach. Link relevant primary documentation when useful.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance evidence
+      description: Explain how to tell whether the change works and which claims would remain unsupported.
+    validations:
+      required: true

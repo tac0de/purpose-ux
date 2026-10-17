@@ -1,0 +1,10 @@
+{
+  "renderer": "Playwright CLI headless Chromium",
+  "viewport": {
+    "width": 960,
+    "height": 640
+  },
+  "screens": 94,
+  "clippingIssues": 0,
+  "scope": "Bounding boxes and horizontal overflow for candidate content, headings, actions, rows and facts. Representative assets require separate direct visual inspection."
+}

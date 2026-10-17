@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "purposeux"
+version = "0.1.0"
+description = "Purpose-conditioned visual A/B decisions, trained locally on Apple Silicon"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = "Apache-2.0"
+authors = [{name = "tac0de"}]
+dependencies = ["mlx-vlm[train]==0.7.8", "mlx==0.32.4", "Pillow==13.0.0", "huggingface-hub==2.2.0"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: MacOS :: MacOS X"]
+
+[project.scripts]
+purposeux = "purposeux.cli:main"
+
+[project.urls]
+Repository = "https://github.com/tac0de/purpose-ux"
+Funding = "https://github.com/sponsors/tac0de"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/purposeux"]

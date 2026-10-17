@@ -1,0 +1,11 @@
+PurposeUX — Copyright 2026 tac0de.
+
+PurposeUX uses MLX-VLM and the Qwen3.5 model family. Base weights are downloaded
+separately from mlx-community/Qwen3.5-0.8B-4bit at the revision recorded in
+the adapter metadata. Qwen3.5-0.8B is published under Apache-2.0 by Qwen.
+The release adapter is a derivative training artifact; it does not include base
+weights. Preserve the upstream license and notices when redistributing weights.
+
+The included interface fixtures and synthetic rubric examples were authored for
+this project using Codex. They are not screenshots of third-party services or
+records of real users. No human preference study is claimed.

@@ -1,0 +1,29 @@
+name: Evaluation or rubric finding
+description: Share a reproducible judgment failure, rubric disagreement, or evaluation result.
+body:
+  - type: textarea
+    id: example
+    attributes:
+      label: Example and provenance
+      description: Include the record ID or a permissioned public example, purpose, candidates, and candidate order. Explain the screenshot source and sharing rights.
+    validations:
+      required: true
+  - type: textarea
+    id: judgment
+    attributes:
+      label: Observed judgment and expected rubric behavior
+      description: Explain the discrepancy and distinguish rubric disagreement from a possible implementation defect. State whether the expectation is synthetic, human annotated, or based on a measured task outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Reproduction and comparison
+      description: Include exact commands, code revision, model and adapter identity, package versions, split, and base-versus-adapter results when available. Do not upload private data or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Known limitations
+      description: Note sample size, possible leakage, ambiguity, and what this evidence does not establish.
